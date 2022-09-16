@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DEA MQTT Emulator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="grid__container">
+      <div class="grid__container-item1"><h2>DEA MQTT Emulator</h2></div>
+      <div class="grid__container-item2">
+        <h4>MQTT</h4>
+        <div class="grid__container-item2--wrap">
+          <div><button id="button-small">Connect</button></div>
+          <div><button id="button-small">Disconnect</button></div>
+          <div><button id="button-small">PingReq</button></div>
+          <div>&nbsp;</div>
+        </div>
+      </div>
+      <div class="grid__container-item3">
+        <h4>Eventos Periódicos</h4>
+        <div class="grid__container-item3--wrap">
+          <div class="grid__container-item3--wrap---item1">
+            Intervalo de Envio
+          </div>
+          <div class="grid__container-item3--wrap---item2">
+            Frequência Cardíaca
+          </div>
+          <div class="grid__container-item3--wrap---item3">SpO<sub>2</sub></div>
+          <div class="grid__container-item3--wrap---item4">Pulso</div>
+          <div class="grid__container-item3--wrap---item5">Bateria</div>
+
+          <div class="grid__container-item3--wrap---item6">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="50"
+              id="myRange" />
+          </div>
+          <div class="grid__container-item3--wrap---item7">OI2</div>
+          <div class="grid__container-item3--wrap---item8">OI3</div>
+          <div class="grid__container-item3--wrap----item9">OI4</div>
+          <div class="---grid__container-item3--wrap--item10">OI5</div>
+        </div>
+      </div>
+      <div class="grid__container-item4">Menu3</div>
+      <div class="grid__container-item5">Right</div>
+      <div class="grid__container-item6">Log</div>
+    </div>
+  </body>
+</html>

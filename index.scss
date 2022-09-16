@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.grid__container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header header header"
+    "menu1 menu1 menu2 menu2 menu3 menu3 right right"
+    "footer footer footer footer footer footer right right";
+  gap: 20px;
+  background-color: #8b8b86;
+  padding: 6px;
+  text-align: start;
+  text-indent: 2rem;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  
+
+  &-item1 {
+    grid-area: header;
+    background-color: rgba(255, 255, 255,1);
+
+    & h2 {
+        text-align: center;
+    }
+  }
+  &-item2 {
+    display: grid;
+    flex-direction: column;
+    grid-area: menu1;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    &--wrap {
+      display: grid;
+      justify-items: center;
+
+      &[id="button-small"] {
+        width: 40px;
+        height: 5px;
+        background-color: red;
+      }
+    }
+
+  }
+  &-item3 {
+    grid-area: menu2;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    &--wrap {
+      display: grid;
+      grid-template-areas:
+        "description1 function1"
+        "description2 function2"
+        "description3 function3"
+        "description4 function4"
+        "description5 function5";
+      gap: 10px;
+      background-color: red;
+      padding: 10px;
+      text-align: center;
+
+      &---item1 {
+        grid-area: description1;
+      }
+      &---item2 {
+        grid-area: description2;
+      }
+      &---item3 {
+        grid-area: description3;
+      }
+      &---item4 {
+        grid-area: description4;
+      }
+      &---item5 {
+        grid-area: description5;
+      }
+
+      &---item6 {
+        grid-area: function1;
+      }
+      &---item7 {
+        grid-area: function2;
+      }
+      &---item8 {
+        grid-area: function3;
+      }
+      &---item9 {
+        grid-area: function4;
+      }
+      &---item10 {
+        grid-area: function5;
+      }
+    }
+  }
+  &-item4 {
+    grid-area: menu3;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  &-item5 {
+    grid-area: right;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  &-item6 {
+    grid-area: footer;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+}

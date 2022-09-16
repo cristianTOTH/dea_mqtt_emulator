@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.grid__container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header header header header header header" "menu1 menu1 menu2 menu2 menu3 menu3 right right" "footer footer footer footer footer footer right right";
+  gap: 20px;
+  background-color: #8b8b86;
+  padding: 6px;
+  text-align: start;
+  text-indent: 2rem;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid__container-item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-area: header;
+  background-color: white;
+}
+
+.grid__container-item1 h2 {
+  text-align: center;
+}
+
+.grid__container-item2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: menu1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid__container-item2--wrap {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.grid__container-item2--wrap[id="button-small"] {
+  width: 40px;
+  height: 5px;
+  background-color: red;
+}
+
+.grid__container-item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: menu2;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid__container-item3--wrap {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "description1 function1" "description2 function2" "description3 function3" "description4 function4" "description5 function5";
+  gap: 10px;
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid__container-item3--wrap---item1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: description1;
+}
+
+.grid__container-item3--wrap---item2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description2;
+}
+
+.grid__container-item3--wrap---item3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: description3;
+}
+
+.grid__container-item3--wrap---item4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: description4;
+}
+
+.grid__container-item3--wrap---item5 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: description5;
+}
+
+.grid__container-item3--wrap---item6 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: function1;
+}
+
+.grid__container-item3--wrap---item7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: function2;
+}
+
+.grid__container-item3--wrap---item8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: function3;
+}
+
+.grid__container-item3--wrap---item9 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: function4;
+}
+
+.grid__container-item3--wrap---item10 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: function5;
+}
+
+.grid__container-item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-area: menu3;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid__container-item5 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-area: right;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid__container-item6 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-area: footer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+/*# sourceMappingURL=index.css.map */
