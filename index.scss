@@ -4,9 +4,13 @@
   @return $remValue;
 }
 
-@mixin config-padding {
-  padding: toRem(10s);
+@mixin style-box {
+  padding: toRem(0) toRem(10) toRem(10) toRem(10);
+  border-width: toRem(1);
+  border-style: solid;
+  border-color: gray;
 }
+
 
 .grid__container {
   display: grid;
@@ -29,7 +33,9 @@
 
   &-item1 {
     grid-area: header;
-    background-color: rgb(139, 133, 133);
+    background-color: rgba(124, 112, 112, 0.645);
+    @include style-box;
+
 
     & h4 {
       text-align: center;
@@ -41,7 +47,7 @@
     grid-area: menu1;
     background-color: rgb(255, 255, 255);
     padding: toRem(8);
-    @include config-padding;
+    @include style-box;
 
     &--wrap {
       display: grid;
@@ -50,7 +56,8 @@
       [id="button-small"] {
         width: toRem(120);
         height: toRem(33);
-        background-color: gray;
+        border: none;
+        background-color: rgba(124, 112, 112, 0.645);
         margin-bottom: 2rem;
       }
     }
@@ -58,7 +65,7 @@
   &-item3 {
     grid-area: menu2;
     background-color: rgba(255, 255, 255, 0.8);
-    @include config-padding;
+    @include style-box;
 
     &--wrap {
       display: grid;
@@ -68,8 +75,7 @@
         "description3 function3"
         "description4 function4"
         "description5 function5";
-      gap: 10px;
-      background-color: red;
+      gap: 10px; 
       padding: 10px;
       text-align: center;
 
@@ -109,12 +115,12 @@
   &-item4 {
     grid-area: menu3;
     background-color: rgba(255, 255, 255, 0.8);
-    @include config-padding;
+    @include style-box;
   }
   &-item5 {
     grid-area: right;
     background-color: rgba(255, 255, 255, 0.8);
-    @include config-padding;
+    @include style-box;
 
     &--wrap {
       display: grid;
@@ -139,7 +145,6 @@
         "description18 function18"
         "description19 function19";
       gap: 10px;
-      background-color: yellowgreen;
       padding: 10px;
       text-align: center;
 
@@ -263,6 +268,6 @@
   &-item6 {
     grid-area: footer;
     background-color: rgba(255, 255, 255, 0.8);
-    @include config-padding;
+    @include style-box;
   }
 }

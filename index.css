@@ -17,7 +17,11 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
   grid-area: header;
-  background-color: #8b8585;
+  background-color: rgba(124, 112, 112, 0.645);
+  padding: 0rem 0.625rem 0.625rem 0.625rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: gray;
 }
 
 .grid__container-item1 h4 {
@@ -37,7 +41,10 @@
   grid-area: menu1;
   background-color: white;
   padding: 0.5rem;
-  padding: 0.625srem;
+  padding: 0rem 0.625rem 0.625rem 0.625rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: gray;
 }
 
 .grid__container-item2--wrap {
@@ -49,7 +56,8 @@
 .grid__container-item2--wrap [id="button-small"] {
   width: 7.5rem;
   height: 2.0625rem;
-  background-color: gray;
+  border: none;
+  background-color: rgba(124, 112, 112, 0.645);
   margin-bottom: 2rem;
 }
 
@@ -59,7 +67,10 @@
   -ms-grid-column-span: 2;
   grid-area: menu2;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.625srem;
+  padding: 0rem 0.625rem 0.625rem 0.625rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: gray;
 }
 
 .grid__container-item3--wrap {
@@ -67,7 +78,6 @@
   display: grid;
       grid-template-areas: "description1 function1" "description2 function2" "description3 function3" "description4 function4" "description5 function5";
   gap: 10px;
-  background-color: red;
   padding: 10px;
   text-align: center;
 }
@@ -138,7 +148,10 @@
   -ms-grid-column-span: 2;
   grid-area: menu3;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.625srem;
+  padding: 0rem 0.625rem 0.625rem 0.625rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: gray;
 }
 
 .grid__container-item5 {
@@ -148,7 +161,10 @@
   -ms-grid-column-span: 2;
   grid-area: right;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.625srem;
+  padding: 0rem 0.625rem 0.625rem 0.625rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: gray;
 }
 
 .grid__container-item5--wrap {
@@ -156,7 +172,6 @@
   display: grid;
       grid-template-areas: "description1 function1" "description2 function2" "description3 function3" "description4 function4" "description5 function5" "description6 function6" "description7 function7" "description8 function8" "description9 function9" "description10 function10" "description11 function11" "description12 function12" "description13 function13" "description14 function14" "description15 function15" "description16 function16" "description17 function17" "description18 function18" "description19 function19";
   gap: 10px;
-  background-color: yellowgreen;
   padding: 10px;
   text-align: center;
 }
@@ -396,6 +411,9 @@
   -ms-grid-column-span: 6;
   grid-area: footer;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0.625srem;
+  padding: 0rem 0.625rem 0.625rem 0.625rem;
+  border-width: 0.0625rem;
+  border-style: solid;
+  border-color: gray;
 }
 /*# sourceMappingURL=index.css.map */
